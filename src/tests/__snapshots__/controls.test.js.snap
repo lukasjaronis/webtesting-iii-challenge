@@ -44,6 +44,29 @@ exports[`Matches snapshot, fireevent on button lock gate 1`] = `
 </body>
 `;
 
+exports[`closed toggle is disabled if gate is locked 1`] = `
+<body>
+  <div>
+    <div
+      class="controls panel"
+    >
+      <button
+        class="toggle-btn"
+        disabled=""
+      >
+        Unlock Gate
+      </button>
+      <button
+        class="toggle-btn"
+        disabled=""
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`gate cannot be closed or opened when gate is locked 1`] = `
 <body>
   <div>

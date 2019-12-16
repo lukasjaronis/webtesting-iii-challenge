@@ -28,3 +28,12 @@ test('gate cannot be closed or opened when gate is locked', () => {
     expect(baseElement).toMatchSnapshot();
 
 })
+
+test('closed toggle is disabled if gate is locked', () => {
+    const toggle = jest.fn();
+    const { getByText, baseElement } = render(<Controls locked={true} toggle={toggle} />)
+    const closedButton = getByText(/close gate/i)
+    fireEvent.click(closedButton);
+    expect(toggle).not.toHaveBeenCalled();
+    expect(baseElement).toMatchSnapshot();
+})
