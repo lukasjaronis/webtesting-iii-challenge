@@ -62,3 +62,24 @@ exports[`display closed if closed prop is true 1`] = `
   </div>
 </body>
 `;
+
+exports[`test if locked and closed uses the \`red-led\` class  1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led red-led"
+      >
+        Locked
+      </div>
+      <div
+        class="led red-led"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</body>
+`;

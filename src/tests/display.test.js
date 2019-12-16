@@ -52,3 +52,17 @@ test('display closed if closed prop is true', () => {
     expect(getByText(defaultState.closed = /closed/i)).toBeDefined();
     expect(baseElement).toMatchSnapshot(); 
 })
+
+test('test if locked and closed uses the `red-led` class ', () => {
+    const defaultState = {
+        closed: true,
+        locked: true
+    }
+
+    const { getByText, baseElement } = render(<Display closed={defaultState.closed} locked={defaultState.locked} />)
+    const isClosed = getByText(/closed/i);
+    const isLocked = getByText(/locked/i);
+    expect(isClosed.classList.contains('red-led')).toBe(true);
+    expect(isLocked.classList.contains('red-led')).toBe(true);
+    expect(baseElement).toMatchSnapshot();
+})
