@@ -17,3 +17,4 @@ test('Matches locked gate snapshot', () => {
     const tree = render(<Display className={lockedClass} />)
     expect(tree.baseElement).toMatchSnapshot(); 
 })
+
