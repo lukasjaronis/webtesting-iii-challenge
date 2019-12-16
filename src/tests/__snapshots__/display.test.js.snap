@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches closed gate snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Matches locked gate snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+  </div>
+</body>
+`;
