@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Matches snapshot, fireevent on button close gate 1`] = `undefined`;
+exports[`Matches snapshot, fireevent on button close gate 1`] = `
+<body>
+  <div>
+    <div
+      class="controls panel"
+    >
+      <button
+        class="toggle-btn"
+        disabled=""
+      >
+        Lock Gate
+      </button>
+      <button
+        class="toggle-btn"
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;
 
-exports[`Matches snapshot, fireevent on button lock gate 1`] = `undefined`;
+exports[`Matches snapshot, fireevent on button lock gate 1`] = `
+<body>
+  <div>
+    <div
+      class="controls panel"
+    >
+      <button
+        class="toggle-btn"
+        disabled=""
+      >
+        Lock Gate
+      </button>
+      <button
+        class="toggle-btn"
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;

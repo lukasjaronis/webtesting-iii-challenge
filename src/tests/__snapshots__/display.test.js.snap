@@ -41,3 +41,24 @@ exports[`Matches locked gate snapshot 1`] = `
   </div>
 </body>
 `;
+
+exports[`display closed if closed prop is true 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led red-led"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</body>
+`;
