@@ -35,7 +35,7 @@ test('displays if gate is open/closed and locked/unlocked', () => {
         closed: true,
         locked: true
     }
-
+    isClosed
     const { getByText } = render(<Display closed={defaultState.closed} locked={defaultState.locked} />)
 
     expect(getByText(defaultState.locked ? /locked/i : /unlocked/i)).toBeDefined();
