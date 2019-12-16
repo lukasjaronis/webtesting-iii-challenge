@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches closed gate snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Matches locked gate snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`display closed if closed prop is true 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led red-led"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`test if locked and closed uses the \`red-led\` class  1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+    >
+      <div
+        class="led red-led"
+      >
+        Locked
+      </div>
+      <div
+        class="led red-led"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</body>
+`;
